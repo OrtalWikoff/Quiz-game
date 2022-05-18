@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <section>
+
+        <div id="firstPage">
+            <h2>Answer the following Javascript questions within the time limit<br>
+           Incorrect answer will remove 10 secound from your time</h2>
+        <button id="startbtn">Start Code Quiz</button>
+        <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
+        </div>
+
+        <div id="JavaQuiz">
+            <div id="timer">Time left: </div>
+                <div id="questions"><p>Questions Placeholder</p></div>
+                    <button id="a" onclick="checkAnswer('a')">A</button>
+                    <button id="b" onclick="checkAnswer('b')">B</button>
+                    <button id="c" onclick="checkAnswer('c')">C</button>
+                    <button id="d" onclick="checkAnswer('d')">D</button>
+                <div id="answers"></div>
+            <h4 id="answerText"></h4>
+        </div>
+        <div id="end">
+
+            <div id="finalScore"></div>
+            <input type="text" size = "40" placeholder="Enter you Name" name="intials" id="name"/>
+            <button id="submitScore">Submit Score</button>
+        </div>
+    <div id="highScore">
+        <div id="scorePage">
+            <div id="scoreHead">
+                <ol id="orderdlist"></ol>
+        </div>
+            <div id = "highscoreName"></div>
+            <div id = "score"></div>
+        </div>
+        <div id="endQuiz">
+            <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+            <button id="clearHighscore" onclick="clearHighScore()">Clear Highscores</button>
+        </div>
+    </div>
+</section>
+    <script src="/assets/script.js"></script>
+</body>
+</html>

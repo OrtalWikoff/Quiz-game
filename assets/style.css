@@ -1,0 +1,112 @@
+  
+    p{
+        color: darkmagenta;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    h2, h4 {
+        font-family: 'Times New Roman', Times, serif;
+        color: darkmagenta; 
+        
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 200, 208);
+      }
+    
+      button {
+        font-family: sans-serif;
+        background-color: #f15ec0;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 250px;
+      }
+    
+      button:hover{
+         color: blueviolet; 
+         background-color: lightblue; 
+      }
+    
+    #firstPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #timer{
+        font-family: 'Times New Roman', Times, serif;
+        color: blueviolet;
+    }
+
+    #JavaQuiz {
+        display: none;
+    }
+    
+    #answers {
+        display: none;
+    }
+    
+    #end {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+   
+    #scoreHead{
+        border-radius: 35px;
+        display:flex;
+        justify-content: space-around;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #highScore{
+        font-family: 'Times New Roman', Times, serif;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    
+    #name{
+        margin: .5rem;
+        height: 1.75rem;
+
+    }
+    
+    #highscoreName{
+        display: inline-block;
+        padding-left: 9.5rem;
+        font-family: sans-serif;
+        font-weight: bold;
+
+    }
+    
+    #score{
+        float: right;
+        padding-right: 8.75rem;
+        font-family: sans-serif;
+        font-weight: bold;
+
+    }
+    
+    #finalScore{
+        padding-bottom: 0.5rem;
+        font-size: x-large;
+        font-family: sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    #endQuiz{
+        display: none;
+    }
