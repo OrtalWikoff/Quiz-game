@@ -77,7 +77,7 @@ var quizQuestions = [{
 // global variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 100;
+var timeLeft = 50;
 var timerInterval;
 var score = 0;
 var correct;

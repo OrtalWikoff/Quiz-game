@@ -64,7 +64,7 @@
         border-radius: 35px;
         display:flex;
         justify-content: space-around;
-        color: black;
+        color: blueviolet;
         font-family: 'Times New Roman', Times, serif;
     }
     #highScore{
