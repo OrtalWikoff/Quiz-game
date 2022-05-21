@@ -89,7 +89,6 @@ startQuizButton.addEventListener("click",startQuiz);
 function generateQuizQuestion(){
     gameoverDiv.style.display = "none";
 
-
     if (currentQuestionIndex === finalQuestionIndex){
        return showScore();
     } 
@@ -101,7 +100,6 @@ function generateQuizQuestion(){
     buttonD.innerHTML = currentQuestion.choiceD;
 };
 
-
 // This function checks the response to each answer 
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
@@ -112,6 +110,7 @@ function checkAnswer(answer){
         generateQuizQuestion();
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
         answerTextA4.textContent = "That Is Incorrect!";
+        timeLeft--;
         currentQuestionIndex++;
         generateQuizQuestion();
     }else{
