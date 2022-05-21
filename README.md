@@ -5,3 +5,6 @@ Here is the URL of the functional, deployed application:
 Here is the URL of the GitHub repository: 
 
 Here is a screenshot of the quiz: 
+
+
+<img width="1440" alt="Screen Shot 2022-05-21 at 4 47 42 PM" src="https://user-images.githubusercontent.com/100814403/169668563-b9dd86be-98ca-4c64-8595-c0420ec2dc80.png">
