@@ -1,5 +1,5 @@
 
-// Gathering HTML elements for manipulation
+// Gathering HTML elements
 var quizBody = document.getElementById("JavaQuiz");
 var resultsEl = document.getElementById("answers");
 var finalScoreEl = document.getElementById("finalScore");
@@ -21,7 +21,7 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
-// Quiz question 
+// Quiz questions 
 var quizQuestions = [{
     question: "What will be the value returned from the code? console.log(Math.floor(8.44))",
     choiceA: "Null",
@@ -82,7 +82,7 @@ var timerInterval;
 var score = 0;
 var correct;
 
-//start the quiz
+//start the quiz on click
 startQuizButton.addEventListener("click",startQuiz);
 
 //function to generate questions and answers
@@ -118,7 +118,7 @@ function checkAnswer(answer){
     }
 }
 
-//function for last screen that display score. 
+//This function is for last screen that display score
 function showScore(){
     quizBody.style.display = "none"
     gameoverDiv.style.display = "flex";
@@ -127,7 +127,7 @@ function showScore(){
     finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
 }
 
-// Start Quiz function.
+// Start Quiz function
 function startQuiz(){
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "none";
@@ -148,8 +148,7 @@ function startQuiz(){
     quizBody.style.display = "block";
 }
 
-
-//not working: function to show high score on click. 
+//Function to show high score on click 
 submitScoreBtn.addEventListener("click", function highscore(event){
     event.preventDefault(); 
     var savedHighscores = JSON.parse(localStorage.getItem("name")) || [];
@@ -175,17 +174,11 @@ submitScoreBtn.addEventListener("click", function highscore(event){
     
 });
 
-//not working: clear list of high scores and generate new scores
-function generateHighscores(event, savedHighscores){
-   // event.preventDefault(); 
-    //highscoreDisplayName.innerHTML = "";
-    //highscoreDisplayScore.innerHTML = "";
-    var savedHighscores = JSON.parse(localStorage.getItem("name")) || [];
-    for (i=0; i<savedHighscores.length; i++){
+//Clear list of high scores and generate new scores
+function generateHighscores(event, savedHighscores){ 
+        var savedHighscores = JSON.parse(localStorage.getItem("name")) || [];
+        for (i=0; i<savedHighscores.length; i++){
         var newNameSpan = document.createElement("li");
-       // var newScoreSpan = document.createElement("li");
-       // highscoreDisplayName.appendChild(newNameSpan);
-        //highscoreDisplayScore.appendChild(newScoreSpan);
         newNameSpan.textContent = savedHighscores[i].name + "-" + savedHighscores[i].score;
         orderdlists.appendChild(newNameSpan);
     }
@@ -206,7 +199,6 @@ function showHighscore(){
 
     generateHighscores();
 }
-
 
 //  clear all to start a new quiz
 function replayQuiz(){

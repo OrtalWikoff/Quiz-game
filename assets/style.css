@@ -80,7 +80,6 @@
     #name{
         margin: .5rem;
         height: 1.75rem;
-
     }
     
     #highscoreName{
@@ -88,7 +87,6 @@
         padding-left: 9.5rem;
         font-family: sans-serif;
         font-weight: bold;
-
     }
     
     #score{
@@ -96,15 +94,13 @@
         padding-right: 8.75rem;
         font-family: sans-serif;
         font-weight: bold;
-
     }
     
     #finalScore{
         padding-bottom: 0.5rem;
         font-size: x-large;
         font-family: sans-serif;
-        font-weight: bold;
-        
+        font-weight: bold;   
     }
     
     #endQuiz{
